@@ -40,6 +40,7 @@ header h1 {
     display: block;
     grid-template-columns:1fr 1fr;
     left:1rem;
+    color: snow;
 }
 .game,.art-title2{
     grid-area: game;
@@ -112,8 +113,8 @@ img{
     color: violet;
     display:grid;
     justify-items: center;
-    grid-template-columns:1fr 1fr 1fr 1fr;
-    margin: .5rem;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    margin: 1rem;
 }
 .full-menu{
     border-radius: 2rem 2rem 0rem 0rem;
@@ -179,12 +180,12 @@ footer{
         grid-template-columns: 1fr;
     }
     .col-3{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr ;
     }
 }
 @media screen and (min-width:37.5rem){
     .topnav{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
     }
     .map{
         height: 19.7rem;
