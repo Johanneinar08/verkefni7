@@ -1,0 +1,193 @@
+
+
+html{
+    scroll-behavior: smooth;
+    background-color: black;
+}
+.pokemon{
+    min-width: 1rem;
+    width: 50rem;
+}
+img{
+    max-width: 45%;
+    height: auto;
+}
+picture{
+    display: grid;
+}
+body{
+    font-family:sans-serif;
+    color: snow;
+    margin: 0;
+    line-height: 1.5;
+}
+header h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+}
+.top-title {  
+    color: violet;
+    display: grid;
+    justify-content: center;
+    font-family: sans-serif;
+    margin: auto ;
+    max-width: 100%;
+    background-color: darkred;
+    border-radius: 0rem 0rem 2rem 2rem;
+}
+.col-2{
+    display: block;
+    grid-template-columns:1fr 1fr;
+    left:1rem;
+}
+.game,.art-title2{
+    grid-area: game;
+}
+.history,.art-title1{
+    grid-area: hist;
+}
+.facts,.art-title3{
+    grid-area: fact;
+}
+main{
+    display: grid;
+    grid-template-areas: 
+    "hist"
+    "game"
+    "fact";
+}
+.topmenu{
+    background-image: linear-gradient(to bottom, crimson,black);
+}
+figure{
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    padding: .5rem;
+}
+article{
+    font-family: sans-serif;
+
+}
+img{
+    display: grid;
+    justify-content: right;
+}
+.sound{
+    z-index: 2;
+    color: crimson;
+    border: 3px solid hotpink;
+    border-radius: 5rem 5rem;
+    display: grid;
+    justify-items: center;
+}
+.Up{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    color: gold;
+    z-index: 3;
+    border: 1px solid blue;
+    padding: 0 .5rem;
+    border-radius: 5rem;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.Up:hover{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    color: blue;
+    z-index: 3;
+    border: 1px solid gold;
+    padding: 0 .5rem;
+    border-radius: 5rem;
+    background-color: rgba(255, 250, 250, 0.8);
+}
+.topnav{
+    top: 0;
+    color: violet;
+    display:grid;
+    justify-items: center;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    margin: .5rem;
+}
+.full-menu{
+    border-radius: 2rem 2rem 0rem 0rem;
+    max-width: 100%;
+    background-color: darkred;
+}
+.topnav a:visited,a:link{
+    top: 0;
+    display: grid;
+    font-size: 1.3rem;
+    color: violet;
+    text-decoration: none;
+}
+.topnav a:hover{
+    display: block;
+    color: pink;
+    font-size: 1.4rem;
+    text-decoration: none;
+    margin: auto;
+}
+footer{
+    font-family: sans-serif;
+    padding: 1rem;
+    margin: auto;
+    line-height: 1.8;
+    color: snow;
+    display: grid;
+    grid-template-areas: 1fr 1fr;
+}
+.col-3{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    background-image: linear-gradient(to top, crimson,black);
+}
+.pics{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+}
+.art-title1,.art-title2,.art-title3{
+    color: darkblue;
+    font-family: 'Franklin Gothic Medium';
+}
+.video{
+    display: grid;
+    margin: auto;
+    padding: 1.5rem;
+    height: fit-content;
+    width: fit-content;
+    border: 1px;
+   
+}
+
+
+@media screen and (min-width:20rem) {
+    .map{
+        width: 100%;
+        height: 37%;
+    }
+    .topnav{
+        grid-template-columns: 1fr;
+    }
+    .col-3{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media screen and (min-width:37.5rem){
+    .topnav{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .map{
+        height: 19.7rem;
+    }
+    
+}
